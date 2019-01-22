@@ -1,12 +1,13 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
+  "name": "catalog/catalog",
+  "description": "Simple Html Parser",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
-      "name": "author's name",
-      "email": "email@example.com"
+      "name": "Kamil Marynowski",
+      "email": "kmarynowski@beautifulcompany.pl",
+      ]
     },
 
     {
