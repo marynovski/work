@@ -12,9 +12,7 @@
 
     {
       "autoload": {
-        "classmap": [
-          "class/"
-        ]
+        "classmap": "class/"
       }
     }
   ]
