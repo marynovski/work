@@ -11,6 +11,10 @@
  * Time: 11:31
  */
 
+echo '<a href="infirmy.php">InfyrmyDotCz</a>';
+die();
+
+
 require __DIR__ . '/vendor/autoload.php';
 
 include_once 'simple_html_dom.php';

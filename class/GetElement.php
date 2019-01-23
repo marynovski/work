@@ -6,7 +6,7 @@
  * Time: 09:01
  */
 
-class GetElement
+abstract class GetElement
 {
     private $selector;
     private $html;
@@ -16,7 +16,7 @@ class GetElement
      * @param $html
      * @return simple_html_dom_node
      */
-    private function getBySelector($selector, $html){
+    private static function getBySelector($selector, $html){
         /** @var simple_html_dom_node $element */
         $element = $html->find($selector);
 
@@ -34,9 +34,9 @@ class GetElement
      * @param $attribute
      * @return array
      */
-    public function getItemLoop($selector, $html, $attribute){
+    public static function getItemLoop($selector, $html, $attribute){
         /** @var simple_html_dom_node $element */
-        $element = $this->getBySelector($selector, $html);
+        $element = self::getBySelector($selector, $html);
 
         $elements = [];
 

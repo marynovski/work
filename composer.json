@@ -6,13 +6,14 @@
   "authors": [
     {
       "name": "Kamil Marynowski",
-      "email": "kmarynowski@beautifulcompany.pl",
+      "email": "kmarynowski@beautifulcompany.pl"
       ]
     },
 
     {
       "autoload": {
-        "classmap": "class/"
+        "classmap":
+                "class/"
       }
     }
   ]
