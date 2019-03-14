@@ -16,15 +16,13 @@ abstract class GetElement
      * @param $html
      * @return simple_html_dom_node
      */
-    private static function getBySelector($selector, $html){
+    public static function getBySelector($selector, $html){
         /** @var simple_html_dom_node $element */
         $element = $html->find($selector);
 
         if($element !== NULL && !empty($element) ){
             return $element;
         }else{
-            echo "Nie znaleziono żadnych elementów!";
-            die();
         }
 
     }
