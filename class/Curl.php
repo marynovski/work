@@ -9,7 +9,7 @@ class Curl
      * @param string $url
      * @return bool|string
      */
-    public function getHtml(string $url)
+    public function getHtml(string $url, $post = 0, $id = NULL)
     {
         $randomProxy = $this->getRandomProxy();
         $proxy = $randomProxy[0] . ':' . $randomProxy[1];
@@ -28,6 +28,16 @@ class Curl
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
         curl_setopt($ch, CURLOPT_HTTPPROXYTUNNEL, 1);
+
+//        if ($post == 1) {
+//            curl_setopt($ch, CURLOPT_POST, 1);
+//            curl_setopt($ch, CURLOPT_POSTFIELDS,
+//                "logType=MisLog&product=AdvListing&productID=".$id."&entryType=301&What=Κομμωτήρια+Κουρεία&Where=");
+//
+//
+//        }
+
+//        curl_setopt($ch, CURLOPT_HTTPHEADER, array("Cookie: huj=$540997$; huje=__AdServer_UniqueID=6acb6ff3-6d87-4e1b-8835-38b8c7fcfde2; hujowo=4pnv2ygfzsn0zcjdjvialazw; ble=__AdServer_UniqueID=232653a8-67fd-49e8-9e2e-d260d16b99f8; bla=mveeay5fmn2emqkpc1p341af; blo=$540997$; xtvrn=$540997$; ASP.NET_SessionId=wxuqrxdmlvxqdpedfvbxw4yk"));
 //curl_setopt($ch, CURLOPT_PROXY, $randomProxy[0]);
 //curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
 //curl_setopt($ch, CURLOPT_PROXYPORT, $randomProxy[1]);

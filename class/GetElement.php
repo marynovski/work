@@ -23,6 +23,7 @@ abstract class GetElement
         if($element !== NULL && !empty($element) ){
             return $element;
         }else{
+            return '""';
         }
 
     }

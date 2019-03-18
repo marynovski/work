@@ -1,0 +1,5 @@
+STRONA 1<br>PHP Notice:  Undefined variable: nrFirmy in /var/www/html/catalog/index.php on line 48
+ PHP Notice:  Undefined variable: nrFirmy in /var/www/html/catalog/index.php on line 49
+<hr>1 <hr>2 <hr>3 <hr>STRONA 1<br>PHP Notice:  Undefined variable: nrFirmy in /var/www/html/catalog/index.php on line 48
+ PHP Notice:  Undefined variable: nrFirmy in /var/www/html/catalog/index.php on line 49
+<hr>
